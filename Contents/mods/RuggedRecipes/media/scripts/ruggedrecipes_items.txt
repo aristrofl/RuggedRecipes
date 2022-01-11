@@ -4,7 +4,49 @@ module RuggedRecipes
 	{
 		Base
 	}
-	/************************ Alcohol ************************/
+/************************ Farming ************************/
+	item Cucumber
+	{
+        DisplayCategory 	= 		Food,
+        Type				=		Food,
+        Icon				=		Cucumber,
+		DisplayName			=		Cucumber,
+        Weight				=		0.3,
+        HungerChange 		=		-5,
+		ThirstChange		= 		-5,
+        DaysFresh 			=		6,
+        DaysTotallyRotten 	=	 	14,
+        EvolvedRecipe       =       Soup:10;Stew:10;Pie:10;Stir fry Griddle Pan:10;Stir fry:10;Salad:10;Roasted Vegetables:10;RicePot:10;RicePan:10;PastaPot:10;PastaPan:10,
+        FoodType            =       Vegetables,
+        Carbohydrates 		= 		5,
+        Proteins 			= 		1.3,
+        Lipids 				= 		0.63,
+        Calories 			= 		33,
+        StaticModel 		= 		CylinderFood_Green,
+        WorldStaticModel 	= 		Zucchini_Ground,
+    }
+	
+	item CucumberSeed
+	{
+		DisplayCategory 	= 		Gardening,
+		DisplayName			=		Cucumber Seeds,
+		Type				=		Normal,
+		Icon				=		TZ_CabbageLettuceSeeds,
+		Weight				=		0.009,
+		WorldStaticModel	= 		Seeds_Ground,
+	}
+
+    item CucumberBagSeed
+	{
+		DisplayCategory 	= 		Gardening,
+		DisplayName			=		Cucumber Seeds Packet,
+		Type				=		Normal,
+		Icon				=		CucumberSeedBag,
+		Weight				=		0.1,
+		WorldStaticModel	= 		RadishSeedBag_Ground,
+	}
+	
+/************************ Alcohol ************************/
 	item HoochMash
 	{
 		DisplayCategory = Food,
@@ -95,22 +137,21 @@ module RuggedRecipes
 		Alcoholic			=	TRUE,
 		DisplayName			=	Bottle of Hooch,
 		Icon				=	Hooch,
-		CustomContextMenu = Drink,
-		AlcoholPower = 2,
-		Carbohydrates = 0,
-		Proteins = 0,
-		Lipids = 0,
-		Calories = 1000,
-		Packaged = TRUE,
-		CantBeFrozen = TRUE,
-		ReplaceOnUse    =   WhiskeyEmpty,
-		StaticModel = WhiskeyBottle,
-		WorldStaticModel = JarFoodPotatoes_Ground,
-		EatType = Bourbon,
-		CustomEatSound = DrinkingFromBottleGlass,
+		CustomContextMenu 	= 	Drink,
+		AlcoholPower 		= 	2,
+		Carbohydrates 		= 	0,
+		Proteins 			= 	0,
+		Lipids 				= 	0,
+		Calories 			= 	1000,
+		Packaged 			= 	TRUE,
+		CantBeFrozen 		= 	TRUE,
+		ReplaceOnUse    	=   WhiskeyEmpty,
+		StaticModel 		= 	WhiskeyBottle,
+		EatType 			= 	Bourbon,
+		CustomEatSound 		= 	DrinkingFromBottleGlass,
 	}
 	
-	/************************ Preserved Foods ************************/
+/************************ Preserved Foods ************************/
 	item UndriedBeefJerky
 	{
 	    DisplayCategory = Food,
@@ -352,7 +393,8 @@ module RuggedRecipes
 		
 	}
 	*/
-	/************************ Literature ************************/
+	
+/************************ Literature ************************/
 	item RuggedRecipesMagazine1
     {
 		DisplayCategory = SkillBook,
@@ -388,44 +430,4 @@ module RuggedRecipes
             ReplaceOnUse    =   RuggedRecipes.RuggedRecipesMagazine3,
         StaticModel = Magazine,
     }
-	/*FARMING*/
-	item Cucumber
-	{
-        DisplayCategory = Food,
-        Type				=		Food,
-        DisplayName			=		Cucumber,
-        Icon				=		Cucumber,
-        Weight				=		0.3,
-        HungerChange 		=		-5,
-		ThirstChange		= 		-5,
-        DaysFresh 			=		6,
-        DaysTotallyRotten 	=	 	14,
-        EvolvedRecipe       =       Soup:10;Stew:10;Pie:10;Stir fry Griddle Pan:10;Stir fry:10;Salad:10;Roasted Vegetables:10;RicePot:10;RicePan:10;PastaPot:10;PastaPan:10,
-        FoodType            =       Vegetables,
-        Carbohydrates 		= 		5,
-        Proteins 			= 		1.3,
-        Lipids 				= 		0.63,
-        Calories 			= 		33,
-        StaticModel 		= 		CylinderFood_Green,
-        WorldStaticModel 	= 		Zucchini_Ground,
-    }
-	
-	item CucumberSeed
-	{
-		DisplayCategory 	= 		Gardening,
-		Type				=		Normal,
-		DisplayName			=		Cucumber Seeds,
-		Icon				=		TZ_CabbageLettuceSeeds,
-		Weight				=		0.009,
-	}
-
-    item CucumberBagSeed
-	{
-		DisplayCategory 	= 		Gardening,
-		Type				=		Normal,
-		DisplayName			=		Cucumber Seeds Packet,
-		Icon				=		CucumberSeedBag,
-		Weight				=		0.1
-		WorldStaticModel	= 		RadishSeedBag_Ground,
-	}
 }

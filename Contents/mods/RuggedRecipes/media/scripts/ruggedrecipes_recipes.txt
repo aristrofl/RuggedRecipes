@@ -17,6 +17,7 @@ module RuggedRecipes
 		Apple/Orange/Peach/Lemon/Strawberries/WatermelonSliced/Banana/Grapes/Pineapple/Cherry,
 		Apple/Orange/Peach/Lemon/Strawberries/WatermelonSliced/Banana/Grapes/Pineapple/Cherry,
 		Apple/Orange/Peach/Lemon/Strawberries/WatermelonSliced/Banana/Grapes/Pineapple/Cherry,
+		
 		Result:HoochMash,
 		Time:20.0,
 		Category:Cooking,
