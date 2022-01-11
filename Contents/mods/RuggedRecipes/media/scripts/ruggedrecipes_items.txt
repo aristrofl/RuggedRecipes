@@ -147,6 +147,7 @@ module RuggedRecipes
 		CantBeFrozen 		= 	TRUE,
 		ReplaceOnUse    	=   WhiskeyEmpty,
 		StaticModel 		= 	WhiskeyBottle,
+        WorldStaticModel = WhiskeyBottleGround,
 		EatType 			= 	Bourbon,
 		CustomEatSound 		= 	DrinkingFromBottleGlass,
 	}
