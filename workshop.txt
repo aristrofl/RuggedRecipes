@@ -1,0 +1,8 @@
+version=1
+id=2715579154
+title=RuggedRecipes
+description=Some rugged recipes to help with long term survival.
+description=
+description=More description coming soon. (My first mod lol)
+tags=Build 41;Food;Traits
+visibility=public

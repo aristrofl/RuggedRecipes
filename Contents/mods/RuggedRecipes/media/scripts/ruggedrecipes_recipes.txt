@@ -1,0 +1,428 @@
+module RuggedRecipes
+{
+	imports
+	{
+		Base
+	}
+	/*********************/
+	/*Alcohol ************/
+	/*********************/
+	recipe Create Hooch Mash
+	{
+		Pot,
+		Yeast,
+		Sugar,
+		Water=10,
+		Ketchup/Honey/JamMarmalade/JamFruit,
+		Apple/Orange/Peach/Lemon/Strawberries/WatermelonSliced/Banana/Grapes/Pineapple/Cherry,
+		Apple/Orange/Peach/Lemon/Strawberries/WatermelonSliced/Banana/Grapes/Pineapple/Cherry,
+		Apple/Orange/Peach/Lemon/Strawberries/WatermelonSliced/Banana/Grapes/Pineapple/Cherry,
+		Result:HoochMash,
+		Time:20.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		NeedToBeLearn:true,
+	}
+	recipe Filter Hooch Mash
+	{
+		destroy Socks_Long/Socks_Ankle,
+		ReadyHoochMash,
+		WhiskeyEmpty/WineEmpty/WineEmpty2,
+		WhiskeyEmpty/WineEmpty/WineEmpty2,
+				
+		Result: RuggedRecipes.Hooch = 2,
+		Time:20.0,
+		Category:Cooking,
+		OnCreate:Recipe.OnCreate.GetThePotBack,
+		OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		NeedToBeLearn:true,
+	}
+	/*********************/
+	/*Preserved Foods ****/
+	/*********************/
+	recipe Prepare Beef for Jerky
+	{
+		Steak,
+		Soysauce,
+		Salt,
+		
+		Result: RuggedRecipes.UndriedBeefJerky,
+		Time:50.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		NeedToBeLearn:true,
+	}
+	
+	recipe Prepare Meat for Biltong
+	{
+		PorkChop/MuttonChop,
+		Salt,
+		
+		Result: RuggedRecipes.UndriedBiltong,
+		Time:50.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		NeedToBeLearn:true,
+	}
+	
+	recipe Prepare Fish for Smoking
+	{
+		Bass/Catfish/Perch/Crappie/Panfish/Pike/Trout,
+		Salt,
+		
+		Result: RuggedRecipes.UndriedSmokedFish,
+		Time:50.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		NeedToBeLearn:true,
+	}
+
+	recipe Make Kentucky Kimchi
+	{
+		EmptyJar,
+		JarLid,
+		Cabbage = 2,
+		Carrots/CannedCarrotsOpen,
+		Leek,
+		RedRadish,
+		Hotsauce,
+		
+		Result: FermentingKentuckyKimchi,
+		OnCreate:Recipe.OnCreate.CannedFood,
+		Time:20.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		NeedToBeLearn:true,
+	}
+	
+	recipe Open Jar of Kentucky Kimchi
+    {
+        FermentedKentuckyKimchi,
+
+        Result:FermentedKentuckyKimchiOpen,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarGetLid,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+	
+	recipe Make 2 Bowls of Kentucky Kimchi
+	{
+	   FermentedKentuckyKimchiOpen,
+	   Bowl=2,
+
+	   Result:KentuckyKimchiBowl=2,
+	   Time:80.0,
+	   Category:Cooking,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+	}
+	
+	/*HOME CANNING FIX - GET JAR AND LID BACK, No pickle ingredients*/
+
+	recipe Make Jar of Tomatoes
+    {
+        EmptyJar,
+        JarLid,
+        farming.Tomato=5,
+        Water=10,
+
+        Result:CannedTomato,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+    recipe Open Jar of Tomatoes
+    {
+        CannedTomato,
+
+        Result:farming.Tomato=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarGetLid,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Make Jar of Carrots
+    {
+        EmptyJar,
+        JarLid,
+        Carrots=5,
+        Water=10,
+
+        Result:CannedCarrots,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+    recipe Open Jar of Carrots
+    {
+        CannedCarrots,
+
+        Result:Carrots=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarGetLid,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Make Jar of Potatoes
+    {
+        EmptyJar,
+        JarLid,
+        farming.Potato=5,
+        Water=10,
+
+        Result:CannedPotato,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+    recipe Open Jar of Potatoes
+    {
+        CannedPotato,
+
+        Result:farming.Potato=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarGetLid,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Make Jar of Eggplants
+    {
+        EmptyJar,
+        JarLid,
+        Eggplant=5,
+        Water=10,
+
+        Result:CannedEggplant,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+    recipe Open Jar of Eggplants
+    {
+        CannedEggplant,
+
+        Result:Eggplant=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarGetLid,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Make Jar of Leeks
+    {
+        EmptyJar,
+        JarLid,
+        Leek=5,
+        Water=10,
+
+        Result:CannedLeek,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+    recipe Open Jar of Leeks
+    {
+        CannedLeek,
+
+        Result:Leek=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarGetLid,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Make Jar of Red Radishes
+    {
+        EmptyJar,
+        JarLid,
+        farming.RedRadish=5,
+        Water=10,
+
+        Result:CannedRedRadish,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+    recipe Open Jar of Red Radishes
+    {
+        CannedRedRadish,
+
+        Result:farming.RedRadish=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarGetLid,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Make Jar of Bell Peppers
+    {
+        EmptyJar,
+        JarLid,
+        BellPepper=5,
+        Water=10,
+
+        Result:CannedBellPepper,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+    recipe Open Jar of Bell Peppers
+    {
+        CannedBellPepper,
+
+        Result:BellPepper=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarGetLid,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Make Jar of Cabbage
+    {
+        EmptyJar,
+        JarLid,
+        farming.Cabbage=3,
+        Water=10,
+
+        Result:CannedCabbage,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+    recipe Open Jar of Cabbage
+    {
+        CannedCabbage,
+
+        Result:farming.Cabbage=3,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarGetLid,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+    recipe Make Jar of Broccoli
+    {
+        EmptyJar,
+        JarLid,
+        Broccoli=5,
+        Water=10,
+
+        Result:CannedBroccoli,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+    recipe Open Jar of Broccoli
+    {
+        CannedBroccoli,
+
+        Result:Broccoli=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarGetLid,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+	
+	recipe Make Jar of Cucumbers
+    {
+        EmptyJar,
+        JarLid,
+        RuggedRecipes.Cucumber=5,
+        Water=10,
+
+        Result:RuggedRecipes.CannedCucumber,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+    recipe Open Jar of Cucumbers
+    {
+        CannedCucumber,
+
+        Result:Cucumbers=8,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarGetLid,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+	
+	recipe Make Jar of Pickles
+    {
+        EmptyJar,
+		JarLid,
+        RuggedRecipes.Cucumber=8,
+        Water=10,
+		Vinegar=2,
+        Sugar=1,
+
+        Result:JarredPicklesUnready,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+	
+	recipe Open Jar of Pickles
+    {
+        JarredPicklesReady,
+
+        Result:Pickles=8,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarGetLid,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+	
+	/* FARMING */
+	recipe Open Packet of Cucumber Seeds
+	{
+        CucumberBagSeed,
+
+        Result:CucumberSeed=50,
+        Time:20.0,
+        Category:Farming,
+	}
+
+    recipe Put Cucumber Seeds in Packet
+    {
+        CucumberSeed=50,
+
+        Result:CucumberBagSeed,
+        Time:10.0,
+        Category:Farming,
+    }
+	
+}

@@ -1,0 +1,4 @@
+Farming_EN = {
+  -- vegetables name (type of seed)
+  Farming_Cucumber = "Cucumber",
+}

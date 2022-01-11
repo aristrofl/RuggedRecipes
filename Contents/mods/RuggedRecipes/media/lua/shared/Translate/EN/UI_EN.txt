@@ -1,0 +1,8 @@
+UI_EN = {
+    UI_trait_shiner = "Shiner",
+    UI_trait_shinerdesc = "You know how to make booze.",
+	UI_trait_fermento = "Fermento",
+    UI_trait_fermentodesc = "You know how to make fermented food.",
+	UI_trait_jerk = "Complete Jerk",
+    UI_trait_jerkdesc = "You know how to make dried goods.",
+}

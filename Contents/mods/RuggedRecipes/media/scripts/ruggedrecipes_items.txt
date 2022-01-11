@@ -1,0 +1,434 @@
+module RuggedRecipes
+{
+	imports
+	{
+		Base
+	}
+	/************************ Alcohol ************************/
+	item HoochMash
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-30,
+		ThirstChange	=	-30,
+		Weight	=	3,
+		Type	=	Food,
+		IsCookable	=	TRUE,
+		UnhappyChange	=	+40,
+		DisplayName	=	Pot of Hooch Mash,
+		ReplaceOnUse	=	Pot,
+		Icon	=	PotFull,
+		MinutesToCook	=	5,
+        DaysTotallyRotten	=	5,
+        DaysFresh = 3,
+        CustomContextMenu = Drink,
+		CustomEatSound = EatingSoup,
+        Carbohydrates = 25,
+        Proteins = 14,
+        Lipids = 4.5,
+        Calories = 202,
+        StaticModel = CookingPot,
+        WorldStaticModel = CookingPotSoup_Ground,
+        EatType = Pot,
+        CookingSound = BoilingFood,
+		ReplaceOnCooked = RuggedRecipes.FermentingHoochMash,
+	}
+	
+	item FermentingHoochMash
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-30,
+		ThirstChange	=	-30,
+		Weight	=	3,
+		Type	=	Food,
+		UnhappyChange	=	+40,
+		DisplayName	=	Pot of Fermenting Hooch Mash,
+		ReplaceOnUse	=	Pot,
+		Icon	=	PotFull,
+        DaysTotallyRotten	=	8,
+        DaysFresh = 1,
+        CustomContextMenu = Drink,
+		CustomEatSound = EatingSoup,
+        Carbohydrates = 25,
+        Proteins = 14,
+        Lipids = 4.5,
+        Calories = 202,
+        StaticModel = CookingPot,
+        WorldStaticModel = CookingPotSoup_Ground,
+        EatType = Pot,
+        CookingSound = BoilingFood,
+		ReplaceOnRotten = RuggedRecipes.ReadyHoochMash,
+	}
+	
+	item ReadyHoochMash
+	{
+	    DisplayCategory = Food,
+		HungerChange	=	-30,
+		ThirstChange	=	-30,
+		Weight	=	3,
+		Type	=	Food,
+		Alcoholic			=	TRUE,
+		AlcoholPower = 10,
+		UnhappyChange	=	+50,
+		DisplayName	=	Pot of Fermented Hooch,
+		ReplaceOnUse	=	Pot,
+		Icon	=	PotFull,
+		MinutesToCook	=	50,
+        CustomContextMenu = Drink,
+		CustomEatSound = EatingSoup,
+        Carbohydrates = 150,
+        Proteins = 14,
+        Lipids = 4.5,
+        Calories = 2000,
+        StaticModel = CookingPot,
+        WorldStaticModel = CookingPotSoup_Ground,
+        EatType = Pot,
+	}
+	
+	item Hooch
+	{
+		DisplayCategory 	=	Food,
+		HungerChange		=	-20,
+		ThirstChange		=	-20,
+		Weight				=	0.7,
+		Type				=	Food,
+		UnhappyChange		=	-10,
+		Alcoholic			=	TRUE,
+		DisplayName			=	Bottle of Hooch,
+		Icon				=	Hooch,
+		CustomContextMenu = Drink,
+		AlcoholPower = 2,
+		Carbohydrates = 0,
+		Proteins = 0,
+		Lipids = 0,
+		Calories = 1000,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		ReplaceOnUse    =   WhiskeyEmpty,
+		StaticModel = WhiskeyBottle,
+		WorldStaticModel = JarFoodPotatoes_Ground,
+		EatType = Bourbon,
+		CustomEatSound = DrinkingFromBottleGlass,
+	}
+	
+	/************************ Preserved Foods ************************/
+	item UndriedBeefJerky
+	{
+	    DisplayCategory = Food,
+		HungerChange	=	-40,
+		Weight	=	0.3,
+		Type	=	Food,
+		IsCookable	=	TRUE,
+		DangerousUncooked	=	TRUE,
+		DaysTotallyRotten	=	4,
+		DisplayName	=	Undried Jerky,
+		Icon	=	PreparedJerky,
+		DaysFresh	=	2,
+		MinutesToCook	=	100,
+		FoodType    =   Meat,
+        Carbohydrates = 0,
+        Proteins = 31.62,
+        Lipids = 9.35,
+        Calories = 220,
+        WorldStaticModel = Steak,
+		ReplaceOnCooked = BeefJerky,
+	}
+	
+	item UndriedSmokedFish
+    {
+        DisplayCategory = Food,
+        HungerChange	=	-25,
+        Weight	=	0.2,
+        Type	=	Food,
+        IsCookable	=	TRUE,
+        DaysTotallyRotten	=	4,
+        MinutesToBurn	=	50,
+        DisplayName	=	Unsmoked Fish,
+        Icon	=	FishFillet,
+        DaysFresh	=	2,
+        MinutesToCook	=	20,
+        Carbohydrates = 1,
+        Proteins = 28.52,
+        Lipids = 12,
+        Calories = 205,
+        EvolvedRecipe = Soup:15;Stew:15;Pie:15;Stir fry Griddle Pan:15;Stir fry:15;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Burger:10;Salad:10|Cooked;Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15,
+        FoodType    =   Fish,
+        BadInMicrowave = true,
+        GoodHot = true,
+        WorldStaticModel = FishFillet,
+		ReplaceOnCooked = RuggedRecipes.SmokedFish,
+        Tags = FishMeat,
+    }
+	
+	item UndriedBiltong
+    {
+		HungerChange		= -30,
+		Weight			= 0.3,
+		Type			= Food,
+		IsCookable		= TRUE,
+		DangerousUncooked	= TRUE,
+		DaysTotallyRotten	= 4,
+		MinutesToBurn		= 70,
+		DisplayName		= Undried Biltong,
+		Icon			= PreparedBiltong,
+		DaysFresh		= 2,
+		MinutesToCook		= 50,
+		EvolvedRecipe 		= Soup:15;Stew:15;Pie:15;Stir fry:15;Sandwich:5|Cooked;Burger:10;Salad:10|Cooked;
+				  Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15,
+		FoodType    		= Meat,
+		Carbohydrates 		= 0,
+		Proteins 		= 25,
+		Lipids 			= 6,
+		Calories 		= 150,
+		BadInMicrowave		= true,
+		GoodHot			= true,
+		BadCold			= true,
+		ReplaceOnCooked = RuggedRecipes.Biltong,
+	}
+	
+	item SmokedFish
+	{
+	    DisplayCategory = Food,
+		HungerChange	=	-20,
+		Weight	=	0.2,
+		AlwaysWelcomeGift	=	true,
+		Type	=	Food,
+		DisplayName	=	Smoked Fish,
+		Icon	=	SmokedFish,
+		EvolvedRecipe = Stew:15;Pie:15;Stir fry Griddle Pan:15;Stir fry:15;Sandwich:5;Sandwich Baguette:5;Salad:5;Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15,
+		FoodType    =   Meat,
+        Carbohydrates = 6,
+        Proteins = 1,
+        Lipids = 1,
+        Calories = 100,
+        Packaged = TRUE,
+        WorldStaticModel = BeefJerky,
+        StaticModel = BeefJerky,
+	}
+	
+	item Biltong
+	{
+	    DisplayCategory = Food,
+		HungerChange	=	-20,
+		Weight	=	0.2,
+		AlwaysWelcomeGift	=	true,
+		Type	=	Food,
+		DisplayName	=	Biltong,
+		Icon	=	Biltong,
+		EvolvedRecipe = Stew:15;Pie:15;Stir fry Griddle Pan:15;Stir fry:15;Sandwich:5;Sandwich Baguette:5;Salad:5;Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15,
+		FoodType    =   Meat,
+        Carbohydrates = 6,
+        Proteins = 1,
+        Lipids = 1,
+        Calories = 100,
+        Packaged = TRUE,
+        WorldStaticModel = BeefJerky,
+        StaticModel = BeefJerky,
+	}
+
+	item FermentingKentuckyKimchi
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-30,
+		ThirstChange	=	-30,
+		Weight	=	2,
+		Type	=	Food,
+		UnhappyChange	=	+40,
+		DisplayName	=	Jar of Fermenting Kentucky Kimchi,
+		ReplaceOnUse	=	Pot,
+		Icon	=	KentuckyKimchi,
+        DaysTotallyRotten	=	2,
+        DaysFresh = 1,
+		CustomEatSound = EatingSoup,
+        Carbohydrates = 25,
+        Proteins = 14,
+        Lipids = 4.5,
+        Calories = 202,
+        StaticModel = CanClosed,
+        WorldStaticModel = JarFoodRadish_Ground,
+		ReplaceOnRotten = RuggedRecipes.FermentedKentuckyKimchi,
+	}
+	
+	item FermentedKentuckyKimchi
+	{
+		DisplayCategory = Food,
+		Type	=	Food,
+		DisplayName	=	Jar of Fermented Kentucky Kimchi,
+		Weight	=	2,
+		Icon	=	KentuckyKimchi,
+		StaticModel = CanClosed,
+        WorldStaticModel = JarFoodRadish_Ground,
+	}
+	
+	item FermentedKentuckyKimchiOpen
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-84,
+		Type	=	Food,
+		DisplayName	=	Open Jar of Fermented Kentucky Kimchi,
+		Weight	=	2,
+		Carbohydrates = 371,
+        Proteins = 10,
+        Lipids = 1.84,
+        Calories = 640,
+		DaysTotallyRotten	=	400,
+		DaysFresh	=	365,
+		UnhappyChange	=	-40,
+		Icon	=	KentuckyKimchi,
+		ReplaceOnUse	=	EmptyJar,
+		StaticModel = CanClosed,
+        WorldStaticModel = JarFoodRadish_Ground,
+	}
+	
+	item KentuckyKimchiBowl
+	{
+	    DisplayCategory = Food,
+		HungerChange	=	-42,
+		Type	=	Food,
+		DisplayName	=	Bowl of Kentucky Kimchi,
+		Weight	=	1,
+		Carbohydrates = 185,
+        Proteins = 5,
+        Lipids = 0.92,
+        Calories = 320,
+		DaysTotallyRotten	=	7,
+		UnhappyChange	=	-25,
+		Icon	=	KentuckyKimchiBowl,
+		ReplaceOnUse	=	Bowl,
+		DaysFresh	=	3,
+		StaticModel = Bowl,
+		EatType = 2handbowl,
+		WorldStaticModel = BowlSoup_Ground,
+	}
+	
+	item JarredPicklesUnready
+	{
+		DisplayCategory = Food,
+		Type	=	Food,
+		DisplayName	=	Jar of Brining Pickles,
+		Weight	=	2,
+		Icon	=	JarOfPickles,
+		DaysFresh	=	0,
+		DaysTotallyRotten	=	7,
+		StaticModel = CanClosed,
+        WorldStaticModel = JarFoodLeeks_Ground,
+		ReplaceOnRotten = RuggedRecipes.JarredPicklesReady,
+	}
+	
+	item JarredPicklesReady
+    {
+        DisplayCategory 	= 		Food,
+        Type				=		Food,
+        DisplayName			=		Jar of Pickles,
+        Icon				=		JarOfPickles,
+        Weight				=		0.5,
+        DaysFresh 			=		60,
+        DaysTotallyRotten 	=	 	90,
+		StaticModel 		= 		CanClosed,
+        WorldStaticModel 	= 		JarFoodLeeks_Ground,
+    }
+	
+	item CannedCucumber
+    {
+        DisplayCategory 	= 		Food,
+        Type				=		Food,
+        DisplayName			=		Jar of Cucumbers,
+        Icon				=		JarWhite,
+        Weight				=		0.5,
+        DaysFresh 			=		60,
+        DaysTotallyRotten 	=	 	90,
+        OnCooked            =       CannedFood_OnCooked,
+		IsCookable	        =	    TRUE,
+        MinutesToBurn	    =	    120,
+        MinutesToCook	    =	    60,
+        StaticModel 		= 		CanClosed,
+        WorldStaticModel 	= 		JarFoodLeeks_Ground,
+    }
+	
+	/*
+	item Pemekin
+	{
+		
+	}
+	
+	item Hardtack
+	{
+		
+	}
+	*/
+	/************************ Literature ************************/
+	item RuggedRecipesMagazine1
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Prison Hooch and You,
+        Icon	=	HoochAndYou,
+        TeachedRecipes  = Create Hooch Mash;Filter Hooch Mash, 
+            ReplaceOnUse    =   RuggedRecipes.RuggedRecipesMagazine1,
+        StaticModel = Magazine,
+    }
+	
+	item RuggedRecipesMagazine2
+    {
+        DisplayCategory = SkillBook,
+		Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Jerkin It!,
+        Icon	=	JerkinIt,
+        TeachedRecipes  = Prepare Meat for Jerky;Prepare Fish for Smoking;Prepare Meat for Biltong, 
+        ReplaceOnUse    =   RuggedRecipes.RuggedRecipesMagazine2,
+        StaticModel = Magazine,
+    }
+	
+	item RuggedRecipesMagazine3
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	In a Pickle. The Fermented Food Guide,
+        Icon	=	InAPickle,
+        TeachedRecipes  = Make Kentucky Kimchi;Make 2 Bowls of Kentucky Kimchi;Make Jar of Pickles, 
+            ReplaceOnUse    =   RuggedRecipes.RuggedRecipesMagazine3,
+        StaticModel = Magazine,
+    }
+	/*FARMING*/
+	item Cucumber
+	{
+        DisplayCategory = Food,
+        Type				=		Food,
+        DisplayName			=		Cucumber,
+        Icon				=		Cucumber,
+        Weight				=		0.3,
+        HungerChange 		=		-5,
+		ThirstChange		= 		-5,
+        DaysFresh 			=		6,
+        DaysTotallyRotten 	=	 	14,
+        EvolvedRecipe       =       Soup:10;Stew:10;Pie:10;Stir fry Griddle Pan:10;Stir fry:10;Salad:10;Roasted Vegetables:10;RicePot:10;RicePan:10;PastaPot:10;PastaPan:10,
+        FoodType            =       Vegetables,
+        Carbohydrates 		= 		5,
+        Proteins 			= 		1.3,
+        Lipids 				= 		0.63,
+        Calories 			= 		33,
+        StaticModel 		= 		CylinderFood_Green,
+        WorldStaticModel 	= 		Zucchini_Ground,
+    }
+	
+	item CucumberSeed
+	{
+		DisplayCategory 	= 		Gardening,
+		Type				=		Normal,
+		DisplayName			=		Cucumber Seeds,
+		Icon				=		TZ_CabbageLettuceSeeds,
+		Weight				=		0.009,
+	}
+
+    item CucumberBagSeed
+	{
+		DisplayCategory 	= 		Gardening,
+		Type				=		Normal,
+		DisplayName			=		Cucumber Seeds Packet,
+		Icon				=		CucumberSeedBag,
+		Weight				=		0.1
+		WorldStaticModel	= 		RadishSeedBag_Ground,
+	}
+}

@@ -1,0 +1,16 @@
+Recipe_EN = {
+    recipe_Create_Hooch_Mash = "Create Hooch Mash",
+	Recipe_Filter_Hooch_Mash = "Filter Hooch Mash",
+	Recipe_Prepare_Beef_for_Jerky = "Prepare Beef for Jerky",
+	Recipe_Prepare_Meat_for_Biltong = "Prepare Meat for Biltong",
+	Recipe_Prepare_Fish_for_Smoking = "Prepare Fish for Smoking",
+	Recipe_Make_Kentucky_Kimchi = "Make Kentucky Kimchi",
+	Recipe_Open_Jar_of_Kentucky_Kimchi = "Open Jar of Kentucky Kimchi",
+	Recipe_Make_2_Bowls_of_Kentucky_Kimchi = "Make 2 Bowls of Kentucky Kimchi",
+	Recipe_Make_Jar_of_Cucumbers = "Make Jar of Cucumbers",
+	Recipe_Open_Jar_of_Cucumbers = "Open Jar of Cucumbers",
+	Recipe_Make_Jar_of_Pickles = "Make Jar of Pickles",
+	Recipe_Open_Jar_of_Pickles = "Open Jar of Pickles",
+	Recipe_Open_Packet_of_Cucumber_Seeds = "Open Packet of Cucumber Seeds",
+	Recipe_Put_Cucumber_Seeds_in_Packet = "Put Cucumber Seeds in Packet",
+}
