@@ -150,7 +150,6 @@ module RuggedRecipes
         Proteins = 28.52,
         Lipids = 12,
         Calories = 205,
-        EvolvedRecipe = Soup:15;Stew:15;Pie:15;Stir fry Griddle Pan:15;Stir fry:15;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Burger:10;Salad:10|Cooked;Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15,
         FoodType    =   Fish,
         BadInMicrowave = true,
         GoodHot = true,
@@ -172,8 +171,6 @@ module RuggedRecipes
 		Icon			= PreparedBiltong,
 		DaysFresh		= 2,
 		MinutesToCook		= 50,
-		EvolvedRecipe 		= Soup:15;Stew:15;Pie:15;Stir fry:15;Sandwich:5|Cooked;Burger:10;Salad:10|Cooked;
-				  Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15,
 		FoodType    		= Meat,
 		Carbohydrates 		= 0,
 		Proteins 		= 25,
