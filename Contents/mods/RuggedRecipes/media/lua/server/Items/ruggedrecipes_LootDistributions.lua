@@ -20,12 +20,16 @@ table.insert(ProceduralDistributions["list"]["MagazineRackMixed"].items, "Rugged
 table.insert(ProceduralDistributions["list"]["MagazineRackMixed"].items, 0.5);
 table.insert(ProceduralDistributions["list"]["MagazineRackMixed"].items, "RuggedRecipes.RuggedRecipesMagazine3");
 table.insert(ProceduralDistributions["list"]["MagazineRackMixed"].items, 0.5);
+table.insert(ProceduralDistributions["list"]["MagazineRackMixed"].items, "RuggedRecipes.RuggedRecipesMagazine4");
+table.insert(ProceduralDistributions["list"]["MagazineRackMixed"].items, 0.5);
 
 table.insert(ProceduralDistributions["list"]["PostOfficeMagazines"].items, "RuggedRecipes.RuggedRecipesMagazine1")
 table.insert(ProceduralDistributions["list"]["PostOfficeMagazines"].items, 0.5);
 table.insert(ProceduralDistributions["list"]["PostOfficeMagazines"].items, "RuggedRecipes.RuggedRecipesMagazine2");
 table.insert(ProceduralDistributions["list"]["PostOfficeMagazines"].items, 0.5);
 table.insert(ProceduralDistributions["list"]["PostOfficeMagazines"].items, "RuggedRecipes.RuggedRecipesMagazine3");
+table.insert(ProceduralDistributions["list"]["PostOfficeMagazines"].items, 0.5);
+table.insert(ProceduralDistributions["list"]["PostOfficeMagazines"].items, "RuggedRecipes.RuggedRecipesMagazine4");
 table.insert(ProceduralDistributions["list"]["PostOfficeMagazines"].items, 0.5);
 
 table.insert(ProceduralDistributions["list"]["PostOfficeNewspapers"].items, "RuggedRecipes.RuggedRecipesMagazine1");
@@ -34,12 +38,16 @@ table.insert(ProceduralDistributions["list"]["PostOfficeNewspapers"].items, "Rug
 table.insert(ProceduralDistributions["list"]["PostOfficeNewspapers"].items, 0.5);
 table.insert(ProceduralDistributions["list"]["PostOfficeNewspapers"].items, "RuggedRecipes.RuggedRecipesMagazine3");
 table.insert(ProceduralDistributions["list"]["PostOfficeNewspapers"].items, 0.5);
+table.insert(ProceduralDistributions["list"]["PostOfficeNewspapers"].items, "RuggedRecipes.RuggedRecipesMagazine4");
+table.insert(ProceduralDistributions["list"]["PostOfficeNewspapers"].items, 0.5);
 
 table.insert(ProceduralDistributions["list"]["CrateNewspapers"].items, "RuggedRecipes.RuggedRecipesMagazine1");
 table.insert(ProceduralDistributions["list"]["CrateNewspapers"].items, 0.5);
 table.insert(ProceduralDistributions["list"]["CrateNewspapers"].items, "RuggedRecipes.RuggedRecipesMagazine2");
 table.insert(ProceduralDistributions["list"]["CrateNewspapers"].items, 0.5);
 table.insert(ProceduralDistributions["list"]["CrateNewspapers"].items, "RuggedRecipes.RuggedRecipesMagazine3");
+table.insert(ProceduralDistributions["list"]["CrateNewspapers"].items, 0.5);
+table.insert(ProceduralDistributions["list"]["CrateNewspapers"].items, "RuggedRecipes.RuggedRecipesMagazine4");
 table.insert(ProceduralDistributions["list"]["CrateNewspapers"].items, 0.5);
 
 table.insert(ProceduralDistributions["list"]["MagazineRackMaps"].items, "RuggedRecipes.RuggedRecipesMagazine1");
@@ -48,12 +56,16 @@ table.insert(ProceduralDistributions["list"]["MagazineRackMaps"].items, "RuggedR
 table.insert(ProceduralDistributions["list"]["MagazineRackMaps"].items, 0.5);
 table.insert(ProceduralDistributions["list"]["MagazineRackMaps"].items, "RuggedRecipes.RuggedRecipesMagazine3");
 table.insert(ProceduralDistributions["list"]["MagazineRackMaps"].items, 0.5);
+table.insert(ProceduralDistributions["list"]["MagazineRackMaps"].items, "RuggedRecipes.RuggedRecipesMagazine4");
+table.insert(ProceduralDistributions["list"]["MagazineRackMaps"].items, 0.5);
 
 table.insert(ProceduralDistributions["list"]["MagazineRackMixed"].items, "RuggedRecipes.RuggedRecipesMagazine1");
 table.insert(ProceduralDistributions["list"]["MagazineRackMixed"].items, 0.5);
 table.insert(ProceduralDistributions["list"]["MagazineRackMixed"].items, "RuggedRecipes.RuggedRecipesMagazine2");
 table.insert(ProceduralDistributions["list"]["MagazineRackMixed"].items, 0.5);
 table.insert(ProceduralDistributions["list"]["MagazineRackMixed"].items, "RuggedRecipes.RuggedRecipesMagazine3");
+table.insert(ProceduralDistributions["list"]["MagazineRackMixed"].items, 0.5);
+table.insert(ProceduralDistributions["list"]["MagazineRackMixed"].items, "RuggedRecipes.RuggedRecipesMagazine4");
 table.insert(ProceduralDistributions["list"]["MagazineRackMixed"].items, 0.5);
 
 table.insert(ProceduralDistributions["list"]["CrateMagazines"].items, "RuggedRecipes.RuggedRecipesMagazine1");
@@ -62,12 +74,16 @@ table.insert(ProceduralDistributions["list"]["CrateMagazines"].items, "RuggedRec
 table.insert(ProceduralDistributions["list"]["CrateMagazines"].items, 0.5);
 table.insert(ProceduralDistributions["list"]["CrateMagazines"].items, "RuggedRecipes.RuggedRecipesMagazine3");
 table.insert(ProceduralDistributions["list"]["CrateMagazines"].items, 0.5);
+table.insert(ProceduralDistributions["list"]["CrateMagazines"].items, "RuggedRecipes.RuggedRecipesMagazine4");
+table.insert(ProceduralDistributions["list"]["CrateMagazines"].items, 0.5);
 
 table.insert(ProceduralDistributions["list"]["GunStoreMagazineRack"].items, "RuggedRecipes.RuggedRecipesMagazine1");
 table.insert(ProceduralDistributions["list"]["GunStoreMagazineRack"].items, 0.5);
 table.insert(ProceduralDistributions["list"]["GunStoreMagazineRack"].items, "RuggedRecipes.RuggedRecipesMagazine2");
 table.insert(ProceduralDistributions["list"]["GunStoreMagazineRack"].items, 0.5);
 table.insert(ProceduralDistributions["list"]["GunStoreMagazineRack"].items, "RuggedRecipes.RuggedRecipesMagazine3");
+table.insert(ProceduralDistributions["list"]["GunStoreMagazineRack"].items, 0.5);
+table.insert(ProceduralDistributions["list"]["GunStoreMagazineRack"].items, "RuggedRecipes.RuggedRecipesMagazine4");
 table.insert(ProceduralDistributions["list"]["GunStoreMagazineRack"].items, 0.5);
 
 table.insert(ProceduralDistributions["list"]["RestaurantKitchenFridge"].items, "RuggedRecipes.Cucumber");

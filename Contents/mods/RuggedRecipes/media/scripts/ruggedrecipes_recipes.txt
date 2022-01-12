@@ -118,242 +118,6 @@ module RuggedRecipes
 	   OnGiveXP:Recipe.OnGiveXP.None,
 	}
 	
-	/*HOME CANNING FIX - GET JAR AND LID BACK, No pickle ingredients*/
-
-	recipe Make Jar of Tomatoes
-    {
-        EmptyJar,
-        JarLid,
-        farming.Tomato=5,
-        Water=10,
-
-        Result:CannedTomato,
-        Time:100.0,
-        OnCreate:Recipe.OnCreate.CannedFood,
-        Category:Cooking,
-        OnGiveXP:Recipe.OnGiveXP.Cooking10,
-		Override:true,
-    }
-
-    recipe Open Jar of Tomatoes
-    {
-        CannedTomato,
-
-        Result:farming.Tomato=5,
-        Time:30.0,
-        OnCreate:Recipe.OnCreate.OpenJarGetLid,
-        Category:Cooking,
-        OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
-    recipe Make Jar of Carrots
-    {
-        EmptyJar,
-        JarLid,
-        Carrots=5,
-        Water=10,
-
-        Result:CannedCarrots,
-        Time:100.0,
-        OnCreate:Recipe.OnCreate.CannedFood,
-        Category:Cooking,
-        OnGiveXP:Recipe.OnGiveXP.Cooking10,
-		Override:true,
-    }
-
-    recipe Open Jar of Carrots
-    {
-        CannedCarrots,
-
-        Result:Carrots=5,
-        Time:30.0,
-        OnCreate:Recipe.OnCreate.OpenJarGetLid,
-        Category:Cooking,
-        OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
-    recipe Make Jar of Potatoes
-    {
-        EmptyJar,
-        JarLid,
-        farming.Potato=5,
-        Water=10,
-
-        Result:CannedPotato,
-        Time:100.0,
-        OnCreate:Recipe.OnCreate.CannedFood,
-        Category:Cooking,
-        OnGiveXP:Recipe.OnGiveXP.Cooking10,
-		Override:true,
-    }
-
-    recipe Open Jar of Potatoes
-    {
-        CannedPotato,
-
-        Result:farming.Potato=5,
-        Time:30.0,
-        OnCreate:Recipe.OnCreate.OpenJarGetLid,
-        Category:Cooking,
-        OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
-    recipe Make Jar of Eggplants
-    {
-        EmptyJar,
-        JarLid,
-        Eggplant=5,
-        Water=10,
-
-        Result:CannedEggplant,
-        Time:100.0,
-        OnCreate:Recipe.OnCreate.CannedFood,
-        Category:Cooking,
-        OnGiveXP:Recipe.OnGiveXP.Cooking10,
-		Override:true,
-    }
-
-    recipe Open Jar of Eggplants
-    {
-        CannedEggplant,
-
-        Result:Eggplant=5,
-        Time:30.0,
-        OnCreate:Recipe.OnCreate.OpenJarGetLid,
-        Category:Cooking,
-        OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
-    recipe Make Jar of Leeks
-    {
-        EmptyJar,
-        JarLid,
-        Leek=5,
-        Water=10,
-
-        Result:CannedLeek,
-        Time:100.0,
-        OnCreate:Recipe.OnCreate.CannedFood,
-        Category:Cooking,
-        OnGiveXP:Recipe.OnGiveXP.Cooking10,
-		Override:true,
-    }
-
-    recipe Open Jar of Leeks
-    {
-        CannedLeek,
-
-        Result:Leek=5,
-        Time:30.0,
-        OnCreate:Recipe.OnCreate.OpenJarGetLid,
-        Category:Cooking,
-        OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
-    recipe Make Jar of Red Radishes
-    {
-        EmptyJar,
-        JarLid,
-        farming.RedRadish=5,
-        Water=10,
-
-        Result:CannedRedRadish,
-        Time:100.0,
-        OnCreate:Recipe.OnCreate.CannedFood,
-        Category:Cooking,
-        OnGiveXP:Recipe.OnGiveXP.Cooking10,
-		Override:true,
-    }
-
-    recipe Open Jar of Red Radishes
-    {
-        CannedRedRadish,
-
-        Result:farming.RedRadish=5,
-        Time:30.0,
-        OnCreate:Recipe.OnCreate.OpenJarGetLid,
-        Category:Cooking,
-        OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
-    recipe Make Jar of Bell Peppers
-    {
-        EmptyJar,
-        JarLid,
-        BellPepper=5,
-        Water=10,
-
-        Result:CannedBellPepper,
-        Time:100.0,
-        OnCreate:Recipe.OnCreate.CannedFood,
-        Category:Cooking,
-        OnGiveXP:Recipe.OnGiveXP.Cooking10,
-		Override:true,
-    }
-
-    recipe Open Jar of Bell Peppers
-    {
-        CannedBellPepper,
-
-        Result:BellPepper=5,
-        Time:30.0,
-        OnCreate:Recipe.OnCreate.OpenJarGetLid,
-        Category:Cooking,
-        OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
-    recipe Make Jar of Cabbage
-    {
-        EmptyJar,
-        JarLid,
-        farming.Cabbage=3,
-        Water=10,
-
-        Result:CannedCabbage,
-        Time:100.0,
-        OnCreate:Recipe.OnCreate.CannedFood,
-        Category:Cooking,
-        OnGiveXP:Recipe.OnGiveXP.Cooking10,
-		Override:true,
-    }
-
-    recipe Open Jar of Cabbage
-    {
-        CannedCabbage,
-
-        Result:farming.Cabbage=3,
-        Time:30.0,
-        OnCreate:Recipe.OnCreate.OpenJarGetLid,
-        Category:Cooking,
-        OnGiveXP:Recipe.OnGiveXP.None,
-    }
-
-    recipe Make Jar of Broccoli
-    {
-        EmptyJar,
-        JarLid,
-        Broccoli=5,
-        Water=10,
-
-        Result:CannedBroccoli,
-        Time:100.0,
-        OnCreate:Recipe.OnCreate.CannedFood,
-        Category:Cooking,
-        OnGiveXP:Recipe.OnGiveXP.Cooking10,
-		Override:true,
-    }
-
-    recipe Open Jar of Broccoli
-    {
-        CannedBroccoli,
-
-        Result:Broccoli=5,
-        Time:30.0,
-        OnCreate:Recipe.OnCreate.OpenJarGetLid,
-        Category:Cooking,
-        OnGiveXP:Recipe.OnGiveXP.None,
-    }
-	
 	recipe Make Jar of Cucumbers
     {
         EmptyJar,
@@ -366,7 +130,6 @@ module RuggedRecipes
         OnCreate:Recipe.OnCreate.CannedFood,
         Category:Cooking,
         OnGiveXP:Recipe.OnGiveXP.Cooking10,
-		Override:true,
     }
 
     recipe Open Jar of Cucumbers
@@ -394,6 +157,7 @@ module RuggedRecipes
         OnCreate:Recipe.OnCreate.CannedFood,
         Category:Cooking,
         OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		NeedToBeLearn:true,
     }
 	
 	recipe Open Jar of Pickles
@@ -425,5 +189,396 @@ module RuggedRecipes
         Time:10.0,
         Category:Farming,
     }
+	/* DEHYDRATING */
+	recipe Slice Apple for Drying
+	{
+		keep HuntingKnife/KitchenKnife/Saw/Axe/HandAxe/AxeStone/WoodAxe/MeatCleaver/FlintKnife/Machete,
+		Apple,
+		
+		Result:PreparedApple,
+		Time:70.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		NeedToBeLearn:true,
+	}
 	
+	recipe Slice Banana for Drying
+	{
+		keep HuntingKnife/KitchenKnife/Saw/Axe/HandAxe/AxeStone/WoodAxe/MeatCleaver/FlintKnife/Machete,
+		Banana,
+		
+		Result:PreparedBanana,
+		Time:70.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		NeedToBeLearn:true,
+	}
+	
+	recipe Slice Cherry for Drying
+	{
+		keep HuntingKnife/KitchenKnife/Saw/Axe/HandAxe/AxeStone/WoodAxe/MeatCleaver/FlintKnife/Machete,
+		Cherry,
+		
+		Result:PreparedCherry,
+		Time:70.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		NeedToBeLearn:true,
+	}
+	
+	recipe Slice Grapefruit for Drying
+	{
+		keep HuntingKnife/KitchenKnife/Saw/Axe/HandAxe/AxeStone/WoodAxe/MeatCleaver/FlintKnife/Machete,
+		Grapefruit,
+		
+		Result:PreparedGrapefruit,
+		Time:70.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		NeedToBeLearn:true,
+	}
+	
+	recipe Slice Grapes for Drying
+	{
+		keep HuntingKnife/KitchenKnife/Saw/Axe/HandAxe/AxeStone/WoodAxe/MeatCleaver/FlintKnife/Machete,
+		Grapes,
+		
+		Result:PreparedGrapes,
+		Time:70.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		NeedToBeLearn:true,
+	}
+	
+	recipe Slice Lemon for Drying
+	{
+		keep HuntingKnife/KitchenKnife/Saw/Axe/HandAxe/AxeStone/WoodAxe/MeatCleaver/FlintKnife/Machete,
+		Lemon,
+		
+		Result:PreparedLemon,
+		Time:70.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		NeedToBeLearn:true,
+	}
+	
+	recipe Slice Mango for Drying
+	{
+		keep HuntingKnife/KitchenKnife/Saw/Axe/HandAxe/AxeStone/WoodAxe/MeatCleaver/FlintKnife/Machete,
+		Mango,
+		
+		Result:PreparedMango,
+		Time:70.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		NeedToBeLearn:true,
+	}
+	
+	recipe Slice Orange for Drying
+	{
+		keep HuntingKnife/KitchenKnife/Saw/Axe/HandAxe/AxeStone/WoodAxe/MeatCleaver/FlintKnife/Machete,
+		Orange,
+		
+		Result:PreparedOrange,
+		Time:70.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		NeedToBeLearn:true,
+	}
+	
+	recipe Slice Peach for Drying
+	{
+		keep HuntingKnife/KitchenKnife/Saw/Axe/HandAxe/AxeStone/WoodAxe/MeatCleaver/FlintKnife/Machete,
+		Peach,
+		
+		Result:PreparedPeach,
+		Time:70.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		NeedToBeLearn:true,
+	}
+	
+	recipe Slice Pineapple for Drying
+	{
+		keep HuntingKnife/KitchenKnife/Saw/Axe/HandAxe/AxeStone/WoodAxe/MeatCleaver/FlintKnife/Machete,
+		Pineapple,
+		
+		Result:PreparedPineapple,
+		Time:70.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		NeedToBeLearn:true,
+	}
+	
+	recipe Slice Strawberries for Drying
+	{
+		keep HuntingKnife/KitchenKnife/Saw/Axe/HandAxe/AxeStone/WoodAxe/MeatCleaver/FlintKnife/Machete,
+		Strewberrie,
+		
+		Result:PreparedStrawberries,
+		Time:70.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		NeedToBeLearn:true,
+	}
+	
+	recipe Slice Watermelon for Drying
+	{
+		keep HuntingKnife/KitchenKnife/Saw/Axe/HandAxe/AxeStone/WoodAxe/MeatCleaver/FlintKnife/Machete,
+		Watermelon,
+		
+		Result:PreparedWatermelon,
+		Time:70.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		NeedToBeLearn:true,
+	}
+}
+
+module Base
+{
+	/*HOME CANNING FIX - GET JAR AND LID BACK, No pickle ingredients*/
+	
+	recipe Make Jar of Tomatoes
+    {
+        EmptyJar,
+        JarLid,
+        farming.Tomato=5,
+        Water=10,
+
+        Result:CannedTomato,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+    recipe Open Jar of Tomatoes
+    {
+        CannedTomato,
+
+        Result:farming.Tomato=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarGetLid,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+		Override:true,
+    }
+
+    recipe Make Jar of Carrots
+    {
+        EmptyJar,
+        JarLid,
+        Carrots=5,
+        Water=10,
+
+        Result:CannedCarrots,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+    recipe Open Jar of Carrots
+    {
+        CannedCarrots,
+
+        Result:Carrots=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarGetLid,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+		Override:true,
+    }
+
+    recipe Make Jar of Potatoes
+    {
+        EmptyJar,
+        JarLid,
+        farming.Potato=5,
+        Water=10,
+
+        Result:CannedPotato,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+    recipe Open Jar of Potatoes
+    {
+        CannedPotato,
+
+        Result:farming.Potato=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarGetLid,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+		Override:true,
+    }
+
+    recipe Make Jar of Eggplants
+    {
+        EmptyJar,
+        JarLid,
+        Eggplant=5,
+        Water=10,
+
+        Result:CannedEggplant,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+    recipe Open Jar of Eggplants
+    {
+        CannedEggplant,
+
+        Result:Eggplant=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarGetLid,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+		Override:true,
+    }
+
+    recipe Make Jar of Leeks
+    {
+        EmptyJar,
+        JarLid,
+        Leek=5,
+        Water=10,
+
+        Result:CannedLeek,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+    recipe Open Jar of Leeks
+    {
+        CannedLeek,
+
+        Result:Leek=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarGetLid,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+		Override:true,
+    }
+
+    recipe Make Jar of Red Radishes
+    {
+        EmptyJar,
+        JarLid,
+        farming.RedRadish=5,
+        Water=10,
+
+        Result:CannedRedRadish,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+    recipe Open Jar of Red Radishes
+    {
+        CannedRedRadish,
+
+        Result:farming.RedRadish=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarGetLid,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+		Override:true,
+    }
+
+    recipe Make Jar of Bell Peppers
+    {
+        EmptyJar,
+        JarLid,
+        BellPepper=5,
+        Water=10,
+
+        Result:CannedBellPepper,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+    recipe Open Jar of Bell Peppers
+    {
+        CannedBellPepper,
+
+        Result:BellPepper=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarGetLid,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+		Override:true,
+    }
+
+    recipe Make Jar of Cabbage
+    {
+        EmptyJar,
+        JarLid,
+        farming.Cabbage=3,
+        Water=10,
+
+        Result:CannedCabbage,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+    recipe Open Jar of Cabbage
+    {
+        CannedCabbage,
+
+        Result:farming.Cabbage=3,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarGetLid,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+		Override:true,
+    }
+
+    recipe Make Jar of Broccoli
+    {
+        EmptyJar,
+        JarLid,
+        Broccoli=5,
+        Water=10,
+
+        Result:CannedBroccoli,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.CannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		Override:true,
+    }
+
+    recipe Open Jar of Broccoli
+    {
+        CannedBroccoli,
+
+        Result:Broccoli=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarGetLid,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+		Override:true,
+    }
 }

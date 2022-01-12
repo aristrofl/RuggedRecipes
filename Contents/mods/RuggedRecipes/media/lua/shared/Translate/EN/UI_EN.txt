@@ -4,5 +4,7 @@ UI_EN = {
 	UI_trait_fermento = "Fermento",
     UI_trait_fermentodesc = "You know how to make fermented food.",
 	UI_trait_jerk = "Complete Jerk",
-    UI_trait_jerkdesc = "You know how to make dried goods.",
+    UI_trait_jerkdesc = "You know how to make dried meats.",
+	UI_trait_dryhumor = "Dry Humor",
+    UI_trait_dryhumor = "You know how to make dried fruits.",
 }
