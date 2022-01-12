@@ -14,9 +14,9 @@ module RuggedRecipes
 		Sugar,
 		Water=10,
 		Ketchup/Honey/JamMarmalade/JamFruit,
-		Apple/Orange/Peach/Lemon/Strawberries/WatermelonSliced/Banana/Grapes/Pineapple/Cherry,
-		Apple/Orange/Peach/Lemon/Strawberries/WatermelonSliced/Banana/Grapes/Pineapple/Cherry,
-		Apple/Orange/Peach/Lemon/Strawberries/WatermelonSliced/Banana/Grapes/Pineapple/Cherry,
+		Apple/Banana/Cherry/Grapefruit/Grapes/Lemon/Mango/Orange/Peach/Pineapple/Strewberrie/WatermelonSliced/Lime/Pear,
+		Apple/Banana/Cherry/Grapefruit/Grapes/Lemon/Mango/Orange/Peach/Pineapple/Strewberrie/WatermelonSliced/Lime/Pear,
+		Apple/Banana/Cherry/Grapefruit/Grapes/Lemon/Mango/Orange/Peach/Pineapple/Strewberrie/WatermelonSliced/Lime/Pear,
 		
 		Result:HoochMash,
 		Time:20.0,
