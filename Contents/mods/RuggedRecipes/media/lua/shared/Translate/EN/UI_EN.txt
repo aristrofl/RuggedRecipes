@@ -6,5 +6,5 @@ UI_EN = {
 	UI_trait_jerk = "Complete Jerk",
     UI_trait_jerkdesc = "You know how to make dried meats.",
 	UI_trait_dryhumor = "Dry Humor",
-    UI_trait_dryhumor = "You know how to make dried fruits.",
+    UI_trait_dryhumordesc = "You know how to make dried fruits.",
 }

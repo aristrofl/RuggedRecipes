@@ -474,7 +474,7 @@ module RuggedRecipes
 		Calories 		= 105,
 		StaticModel             = CylinderFood_Yellow,
 		WorldStaticModel        = Banana_Ground,
-		CustomEatSound          = EatingMushy,
+		CustomEatSound          = EatingFruit,
 	}
 	
 	item PreparedCherry
@@ -937,15 +937,100 @@ module RuggedRecipes
         CustomEatSound = EatingFruit,
 	}
 	
-	/*
-	item Pemekin
+	item PreparedPear
 	{
-		
+		HungerChange	=	-15,
+		Weight	=	0.2,
+		Type	=	Food,
+		DaysTotallyRotten	=	8,
+		DisplayName	=	Sliced Pear,
+		Icon	=	PreparedPear,
+		DaysFresh	=	5,
+		EvolvedRecipe = Cake:8;FruitSalad:8;Pancakes:8;Waffles:8;Muffin:8,
+		FoodType    =   Fruits,
+		ThirstChange	=	-7,
+        Carbohydrates = 20.13,
+        Proteins = 0.27,
+        Lipids = 0.21,
+        Calories = 75,
+        CustomEatSound = EatingFruit,
+		IsCookable			= TRUE,
+		MinutesToCook	=	100,
+		ReplaceOnCooked = RuggedRecipes.DriedPear,
+	}
+	
+	item DriedPear
+	{
+		HungerChange	=	-15,
+		Weight	=	0.1,
+		Type	=	Food,
+		DaysTotallyRotten	=	360,
+		DisplayName	=	Dried Pear,
+		Icon	=	DriedPear,
+		DaysFresh	=	5,
+		EvolvedRecipe = Cake:8;FruitSalad:8;Pancakes:8;Waffles:8;Muffin:8,
+		FoodType    =   Fruits,
+		ThirstChange	=	+5,
+        Carbohydrates = 20.13,
+        Proteins = 0.27,
+        Lipids = 0.21,
+        Calories = 75,
+        CustomEatSound = EatingFruit,
+	}
+	
+	item PreparedLime
+	{
+		HungerChange	=	-10,
+		Weight	=	0.2,
+		Type	=	Food,
+		DaysTotallyRotten	=	9,
+		DisplayName	=	Lime,
+		Icon	=	PreparedLime,
+		DaysFresh	=	7,
+		EvolvedRecipe = Cake:10;FruitSalad:10;Pancakes:10;Waffles:10;Muffin:10,
+		FoodType    =   Fruits,
+		ThirstChange	=	-5,
+        Carbohydrates = 5.41,
+        Proteins = 0.64,
+        Lipids = 0.17,
+        Calories = 17,
+        StaticModel = RoundFood_Yellow,
+        CustomEatSound = EatingFruit,
+        WorldStaticModel = Lime_Ground,
+		IsCookable			= TRUE,
+		MinutesToCook	=	100,
+		ReplaceOnCooked = RuggedRecipes.DriedLime,
+	}
+	
+	item DriedLime
+	{
+		HungerChange	=	-10,
+		Weight	=	0.1,
+		Type	=	Food,
+		DaysTotallyRotten	=	360,
+		DisplayName	=	Dried Lime,
+		Icon	=	DriedLime,
+		DaysFresh	=	7,
+		EvolvedRecipe = Cake:10;FruitSalad:10;Pancakes:10;Waffles:10;Muffin:10,
+		FoodType    =   Fruits,
+		ThirstChange	=	+5,
+        Carbohydrates = 5.41,
+        Proteins = 0.64,
+        Lipids = 0.17,
+        Calories = 17,
+        StaticModel = RoundFood_Yellow,
+        CustomEatSound = EatingFruit,
+        WorldStaticModel = Lime_Ground,
+	}
+	/*
+	item Pemmican
+	{
+		Icon	=	Pemmican,
 	}
 	
 	item Hardtack
 	{
-		
+		Icon	=	Hardtack,
 	}
 	*/
 	
@@ -993,8 +1078,8 @@ module RuggedRecipes
         Type	=	Literature,
         DisplayName	=	Raisin the roof! The Dehydrated Food Guide,
         Icon	=	RaisinRoof,
-        TeachedRecipes  = Slice Apple for Drying;Slice Banana for Drying;Slice Cherry for Drying;Slice Grapefruit for Drying;Slice Grapes for Drying;Slice Lemon for Drying;Slice Mango for Drying;Slice Orange for Drying;Slice Peach for Drying;Slice Pineapple for Drying;Slice Strawberries for Drying;Slice Watermelon for Drying, 
-            ReplaceOnUse    =   RuggedRecipes.RuggedRecipesMagazine3,
+        TeachedRecipes  = Slice Apple for Drying;Slice Banana for Drying;Slice Cherry for Drying;Slice Grapefruit for Drying;Slice Grapes for Drying;Slice Lemon for Drying;Slice Mango for Drying;Slice Orange for Drying;Slice Peach for Drying;Slice Pineapple for Drying;Slice Strawberries for Drying;Slice Watermelon for Drying;Slice Pear for Drying;Slice Lime for Drying, 
+            ReplaceOnUse    =   RuggedRecipes.RuggedRecipesMagazine4,
         StaticModel = Magazine,
     }
 }

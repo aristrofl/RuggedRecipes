@@ -27,6 +27,8 @@ local function initRuggedRecipesTraits()
 	dryhumor:getFreeRecipes():add("Slice Pineapple for Drying");
 	dryhumor:getFreeRecipes():add("Slice Strawberries for Drying");
 	dryhumor:getFreeRecipes():add("Slice Watermelon for Drying");
+	dryhumor:getFreeRecipes():add("Slice Pear for Drying");
+	dryhumor:getFreeRecipes():add("Slice Lime for Drying");
     --===========--
     --Bad Traits --
     --===========--

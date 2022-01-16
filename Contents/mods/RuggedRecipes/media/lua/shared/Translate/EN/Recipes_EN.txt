@@ -25,4 +25,6 @@ Recipe_EN = {
 	Recipe_Slice_Pineapple_for_Drying  = "Slice Pineapple for Drying",
 	Recipe_Slice_Strawberries_for_Drying  = "Slice Strawberries for Drying",
 	Recipe_Slice_Watermelon_for_Drying  = "Slice Watermelon for Drying",
+	Recipe_Slice_Pear_for_Drying  = "Slice Pear for Drying",
+	Recipe_Slice_Lime_for_Drying  = "Slice Lime for Drying",
 }

@@ -136,7 +136,7 @@ module RuggedRecipes
     {
         CannedCucumber,
 
-        Result:Cucumbers=8,
+        Result:Cucumber=8,
         Time:30.0,
         OnCreate:Recipe.OnCreate.OpenJarGetLid,
         Category:Cooking,
@@ -328,6 +328,30 @@ module RuggedRecipes
 		Watermelon,
 		
 		Result:PreparedWatermelon,
+		Time:70.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		NeedToBeLearn:true,
+	}
+	
+	recipe Slice Pear for Drying
+	{
+		keep HuntingKnife/KitchenKnife/Saw/Axe/HandAxe/AxeStone/WoodAxe/MeatCleaver/FlintKnife/Machete,
+		Pear,
+		
+		Result:PreparedPear,
+		Time:70.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking3,
+		NeedToBeLearn:true,
+	}
+	
+	recipe Slice Lime for Drying
+	{
+		keep HuntingKnife/KitchenKnife/Saw/Axe/HandAxe/AxeStone/WoodAxe/MeatCleaver/FlintKnife/Machete,
+		Lime,
+		
+		Result:PreparedLime,
 		Time:70.0,
 		Category:Cooking,
 		OnGiveXP:Recipe.OnGiveXP.Cooking3,
